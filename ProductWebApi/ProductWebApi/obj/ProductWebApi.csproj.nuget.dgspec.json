@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46447568812\\Desktop\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj": {}
+    "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\ApiProducts\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46447568812\\Desktop\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj": {
+    "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\ApiProducts\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46447568812\\Desktop\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\ApiProducts\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj",
         "projectName": "ProductWebApi",
-        "projectPath": "C:\\Users\\46447568812\\Desktop\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj",
-        "packagesPath": "C:\\Users\\46447568812\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46447568812\\Desktop\\ProductWebApi\\ProductWebApi\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\ApiProducts\\ProductWebApi\\ProductWebApi\\ProductWebApi.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\ApiProducts\\ProductWebApi\\ProductWebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\46447568812\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

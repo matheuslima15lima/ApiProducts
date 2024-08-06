@@ -47,5 +47,51 @@ namespace ProductWebApi.Controllers
                 throw;
             }
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            try
+            {
+                return Ok(_productsRepository.GetProductsById(id));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, Products products)
+        {
+            try
+            {
+                _productsRepository.Update(id, products);
+
+                return Ok();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id) {
+            try
+            {
+                _productsRepository.Delete(id);
+
+                return Ok();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }

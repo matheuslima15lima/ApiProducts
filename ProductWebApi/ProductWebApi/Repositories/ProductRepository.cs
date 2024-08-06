@@ -13,9 +13,24 @@ namespace ProductWebApi.Repositories
         {
             _context = new Context();
         }
-        public void Delete(Products products)
+        public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Products productBuscado = _context.Products.Find(id)!;
+
+                if (productBuscado != null)
+                {
+                    _context.Products.Remove(productBuscado);
+                }
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+         
         }
 
         public List<Products> GetProducts()
@@ -36,9 +51,17 @@ namespace ProductWebApi.Repositories
             }
         }
 
-        public Products GetProductsById(int id)
+        public Products GetProductsById(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.Products.Find(id)!;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Post(Products products)
@@ -59,7 +82,23 @@ namespace ProductWebApi.Repositories
 
         public void Update(Guid idProduct, Products products)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Products productBuscado = _context.Products.Find(idProduct)!;
+
+                if(productBuscado != null)
+                {
+                    productBuscado.Name = products.Name;
+                    productBuscado.Price = products.Price;
+                }
+
+                _context.Products.Update(productBuscado);
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

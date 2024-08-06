@@ -6,11 +6,11 @@ namespace ProductWebApi.Interfaces
     {
         public  List<Products> GetProducts();
 
-        public Products GetProductsById(int id);
+        public Products GetProductsById(Guid id);
 
         public void Post(Products products);
 
-        public void Delete(Products products);
+        public void Delete(Guid id);
 
         public void Update(Guid idProduct, Products products);
     }
