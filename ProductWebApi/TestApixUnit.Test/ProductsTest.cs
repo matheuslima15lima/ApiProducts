@@ -87,7 +87,7 @@ namespace TestApixUnit.Test
             Products products = new Products();
             var mockRepository = new Mock<IProductsRepository>();
 
-            var produtoDeletar = productList.();
+            var produtoDeletar = productList.First();
 
             mockRepository.Setup(x => x.Delete(produtoDeletar.IdProduct)).Callback(()=>productList.RemoveAll(p=> p.IdProduct == produtoDeletar.IdProduct));
 
@@ -108,9 +108,40 @@ namespace TestApixUnit.Test
             };
             Products products = new Products();
             var mockRepository = new Mock<IProductsRepository>();
-            //mockRepository.Setup(x => x.GetProductsById(products.IdProduct)).Returns(p => p.IdProduct == products.id));
-            //mockRepository.Setup(x => x.GetProductsById(products.IdProduct)).Callback(() => productList.();
 
+            mockRepository.Setup(x => x.GetProductsById(products.IdProduct)).Returns(productList.FirstOrDefault(x => x.IdProduct == products.IdProduct)!);
+           
+            var result = mockRepository.Object.GetProductsById(products.IdProduct);
+
+            Assert.True(result != null);
+        }
+
+        [Fact]
+         public void Put()
+        {
+            var productId = Guid.NewGuid();
+
+            Products product = new Products { IdProduct = productId, Name = "Ps2", Price = 100 };
+
+            List<Products> productList = new List<Products>();
+
+            var mockRepository = new Mock<IProductsRepository>();
+
+            mockRepository.Setup(x => x.Update(productId, product)).Callback<Guid, Products>((id, p) =>
+            {
+                var item = productList.FirstOrDefault(x => x.IdProduct == id);
+
+
+                if (item != null)
+                {
+                    p.Name = item.Name;
+                    p.Price = item.Price;
+                    productList.Add(product);
+                }
+            });
+
+            mockRepository.Object.Update(productId, product);
+            Assert.Equal(product.Name, "Ps2");
         }
 
     }
