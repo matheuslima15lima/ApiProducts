@@ -1,0 +1,14 @@
+C:\Users\46447568812\Desktop\ExercicioRevisao\bin\Debug\net8.0\ExercicioRevisao.exe
+C:\Users\46447568812\Desktop\ExercicioRevisao\bin\Debug\net8.0\ExercicioRevisao.deps.json
+C:\Users\46447568812\Desktop\ExercicioRevisao\bin\Debug\net8.0\ExercicioRevisao.runtimeconfig.json
+C:\Users\46447568812\Desktop\ExercicioRevisao\bin\Debug\net8.0\ExercicioRevisao.dll
+C:\Users\46447568812\Desktop\ExercicioRevisao\bin\Debug\net8.0\ExercicioRevisao.pdb
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.AssemblyInfoInputs.cache
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.AssemblyInfo.cs
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.csproj.CoreCompileInputs.cache
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.dll
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\refint\ExercicioRevisao.dll
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.pdb
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ExercicioRevisao.genruntimeconfig.cache
+C:\Users\46447568812\Desktop\ExercicioRevisao\obj\Debug\net8.0\ref\ExercicioRevisao.dll
